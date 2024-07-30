@@ -23,4 +23,4 @@ if file_name.endswith(".txt"):
     print(file_type + "/plain")
 
 else:
-    
+    print("application/octet-stream")
