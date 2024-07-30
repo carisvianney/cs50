@@ -1,4 +1,9 @@
 file_name = input("File name: ")
 
-if file_name.endswith ".gif":
+def direction():
+    print("image/" + )
+
+
+if file_name.endswith(".gif"):
+    return
 
