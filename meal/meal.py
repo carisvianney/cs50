@@ -7,6 +7,7 @@ def convert(time):
     time = hours
 
 def main():
+    # 8:30
     convert(time)
     if 7.0 <= time < 9.0:
         print("breakfast time")
