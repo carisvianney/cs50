@@ -3,7 +3,7 @@ images = [".gif", ".png", ".jpg", ".jpeg"]
 applications = [".pdf", ".zip"]
 text_app = "txt"
 
-if file_name.endswith(".gif", ".png", ".jpg", ".jpeg"):
+if file_name.endswith(".gif")or(".png"),(".jpg"),(".jpeg"):
     print("image/" + file_name.endswith(3))
 
 else:
