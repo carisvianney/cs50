@@ -3,8 +3,8 @@ images = [".gif", ".png", ".jpg", ".jpeg"]
 applications = [".pdf", ".zip"]
 text_app = "txt"
 
-if file_name.endswith(".gif")or(".png"),(".jpg"),(".jpeg"):
-    print("image/" + file_name.endswith(3))
+if file_name.endswith(".gif")or(".png")or(".jpg")or(".jpeg"):
+    print("image/" + file_name.endswith())
 
 else:
     print("application/octet-stream")
