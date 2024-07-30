@@ -1,11 +1,8 @@
 time = input("What time is it? ")
-hours, minutes = time.split(":")
-
-hours = int(hours)
-minutes = int(minutes)
 
 def convert(time):
-
+    hours, minutes = time.split(":")
+    
 
 if 7 <= hours < 9:
     print("breakfast time")
