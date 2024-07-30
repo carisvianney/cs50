@@ -12,7 +12,6 @@ def main():
     # 8:30
     time = convert(user_input)
     # print(time)
-    return
     if 7.0 <= time < 8.0:
         print("breakfast time")
     elif 12.0 <= time < 13.0:
