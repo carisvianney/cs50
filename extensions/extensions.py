@@ -18,6 +18,9 @@ elif file_name.endswith(".zip"):
 
 print("application/" + file_type)
 
-.txt
-.zip
-.pdf
+if file_name.endswith(".txt"):
+    file_type = "txt"
+    print(file_type + "/plain")
+
+else:
+    
