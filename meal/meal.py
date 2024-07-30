@@ -6,5 +6,5 @@ def convert(time):
     hours = float(hours)
     time = hours + minutes
 
-if 7.0 <= time < 9.0:
+if 7.0 <= float(time) < 9.0:
     print("breakfast time")
