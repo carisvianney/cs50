@@ -1,5 +1,8 @@
 file_name = input("File name: ")
 
+def file_type():
+    print()
+
 if file_name.endswith(".gif"):
     file_type = "gif"
 elif file_name.endswith(".png"):
