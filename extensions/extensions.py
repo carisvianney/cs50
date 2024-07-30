@@ -9,8 +9,6 @@ if file_name.endswith(images):
         file_type = "gif"
     elif file_name.endswith(".png"):
         file_type = "png"
-    elif file_name.endswith(".jpg"):
-        file_type = "jpg"
     else:
         file_type = "jpeg"
 
