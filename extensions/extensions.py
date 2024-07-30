@@ -12,8 +12,11 @@ elif file_name.endswith(".jpeg"):
 print("image/" + file_type)
 
 if file_name.endswith(".pdf"):
-    file_type = pdf
-elif file_name.endswith()
+    file_type = "pdf"
+elif file_name.endswith(".zip"):
+    file_type = "zip"
+
+print("application/" + file_type)
 
 .txt
 .zip
