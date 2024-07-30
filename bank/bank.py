@@ -1,6 +1,6 @@
 Greeting = str.lower(input("Greeting: "))
 
-if Greeting == "hello":
+if "hello" in Greeting:
     print("$0")
 
 elif Greeting.startswith("h"):
