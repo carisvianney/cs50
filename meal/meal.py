@@ -1,12 +1,12 @@
 user_input = input("What time is it? ")
 
-def convert(_time):
-    hours, minutes = _time.split(":")
+def convert(time):
+    hours, minutes = time.split(":")
     minutes = float(minutes) / 60.0
     hours = float(hours) + minutes
     # print(hours, minutes)
-    _time = hours
-    return _time
+    time = hours
+    return time
 
 def main():
     # 8:30
