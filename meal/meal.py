@@ -19,4 +19,5 @@ def main():
     elif 18.0 <= time < 19.0:
         print("dinner time")
 
-main()
+if __name__ == "__main__":
+    main()
