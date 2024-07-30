@@ -1,6 +1,6 @@
 Greeting = input("Greeting: ")
 
-if Greeting == "hello":
+if Greeting.lower == "hello":
     print("$0")
 
 elif Greeting.startswith == "h":
