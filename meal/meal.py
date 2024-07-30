@@ -4,7 +4,6 @@ def convert(_time):
     hours, minutes = _time.split(":")
     minutes = float(minutes) / 60.0
     hours = float(hours) + minutes
-    print(hours, minutes)
     _time = hours
     return _time
 
