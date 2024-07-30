@@ -1,5 +1,5 @@
 file_name = input("File name: ")
-images = [".gif", ".png", ".jpg", ".jpeg"]
+images = (".gif", ".png", ".jpg", ".jpeg")
 applications = [".pdf", ".zip"]
 text_app = "txt"
 
@@ -12,7 +12,7 @@ if file_name.endswith(images):
         file_type = "jpg"
     else:
         file_type = "jpeg"
-        
+
     print("image/" + file_type)
 
 else:
