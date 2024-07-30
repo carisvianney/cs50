@@ -1,4 +1,4 @@
-file_name = input("File name: ")
+file_name = lower(input("File name: "))
 images = (".gif", ".png", ".jpg", ".jpeg")
 applications = (".pdf", ".zip")
 
