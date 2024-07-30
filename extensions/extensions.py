@@ -1,4 +1,6 @@
-file_name = lower(input("File name: "))
+file_name = input("File name: ")
+file_name = file_name.strip().lower()
+
 images = (".gif", ".png", ".jpg", ".jpeg")
 applications = (".pdf", ".zip")
 
