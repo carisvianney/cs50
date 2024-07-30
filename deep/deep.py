@@ -1,7 +1,7 @@
 answer = input("What is the answer to the Great Question of Life, the Universe, and Everything? ")
 
-if answer != "42" or "forty-two" or "forty two":
-    print("No")
+if answer == "42":
+    print("Yes")
 
 else:
-    print("Yes")
+    print("No")
