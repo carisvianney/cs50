@@ -1,4 +1,6 @@
 file_name = input("File name: ")
+images = [".gif", ".png", ".jpg", ".jpeg"]
+applications = []
 
 if file_name.endswith(".gif"):
     file_name = "gif"
