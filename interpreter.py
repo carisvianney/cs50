@@ -1,6 +1,7 @@
-x, y, z = input("Expression: ")
-x = float(x)
-z = float(z)
+expression = input("Expression: ")
+x, y, z = expression.split(" ")
+
+x = int(x)
 
 if y == "+":
     print(x + z)
