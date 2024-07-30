@@ -5,7 +5,7 @@ hours = int(hours)
 minutes = int(minutes)
 
 def convert(time):
-    
+    minutes * 100 / 60
     hours + minutes
 
 if 7 <= hours <= 8:
