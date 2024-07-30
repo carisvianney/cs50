@@ -1,2 +1,5 @@
-Time = input("What time is it? ")
-hours, minutes = Time(" : ")
+time = input("What time is it? ")
+hours, minutes = time.split(":")
+
+def convert(time):
+    
