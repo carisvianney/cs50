@@ -1,5 +1,13 @@
 user_input = input("What time is it? ")
 
+def convert(time):
+    hours, minutes = time.split(":")
+    minutes = float(minutes) / 60.0
+    hours = float(hours) + minutes
+    # print(hours, minutes)
+    print(hours)
+    return hours
+
 def main():
     # 8:30
     time = convert(user_input)
@@ -10,14 +18,6 @@ def main():
         print("lunch time")
     elif 18.0 <= time <= 19.0:
         print("dinner time")
-
-def convert(time):
-    hours, minutes = time.split(":")
-    minutes = float(minutes) / 60.0
-    hours = float(hours) + minutes
-    # print(hours, minutes)
-    print(hours)
-    return hours
 
 if __name__ == "__main__":
     main()
