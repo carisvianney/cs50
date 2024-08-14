@@ -13,5 +13,6 @@ def main(amount_due):
 #insertar moneda loop
 while amount_due > 0:
     coin_inserted = int(input("Insert coin: "))
+    print("Amount due: " + str(amount_due))
 
 main(amount_due)
