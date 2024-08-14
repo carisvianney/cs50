@@ -5,12 +5,13 @@ coins_permitted = [25, 10, 5]
 print("Amount due: " + str(amount_due))
 
 #restar moneda incluida en la lista al monto total
-def main():
+def main(amount_due):
     if coin_inserted in coins_permitted:
         amount_due = amount_due - coin_inserted
         print("Amount due: " + str(amount_due))
 
-#insertar moneda
-coin_inserted = int(input("Insert coin: "))
+#insertar moneda loop
+while amount_due > 0:
+    coin_inserted = int(input("Insert coin: "))
 
 main(amount_due)
