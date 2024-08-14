@@ -6,3 +6,5 @@ for letter in camelCase:
         letter = "_" + letter.lower()
     print(letter, end="")
 
+print()
+
