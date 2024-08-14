@@ -12,9 +12,6 @@ def main():
     else:
         print("Invalid")
 
-def start_with_letters(plate):
-    
-
 def is_valid(plate):
     ...
 
