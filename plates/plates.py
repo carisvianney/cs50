@@ -7,7 +7,7 @@ def main():
 
 
 def is_valid(s):
-    if len(s) <= 6 and > 2:
+    if len(s) <= 6 and len(s) >= 2:
         return True
     else:
         False
