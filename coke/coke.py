@@ -12,16 +12,8 @@ while amount_due > 0:
         print("Amount due: ", end="")
         print(amount_due)
 
+#muestra el cambio en números positivos
 else:
-    print("Change owed: ", end="")
+    print("Change Owed: ", end="")
     print(amount_due)
 
-"""
-#restar moneda incluida en la lista al monto total
-def main(amount_due):
-    if coin_inserted in coins_permitted:
-        amount_due = amount_due - coin_inserted
-        print("Amount due: " + str(amount_due))
-
-main(amount_due)
-"""
