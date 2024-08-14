@@ -10,6 +10,7 @@ while amount_due > 0:
     print("Amount due: ", end="")
     print(amount_due - coin_inserted)
 
+"""
 #restar moneda incluida en la lista al monto total
 def main(amount_due):
     if coin_inserted in coins_permitted:
@@ -17,3 +18,4 @@ def main(amount_due):
         print("Amount due: " + str(amount_due))
 
 main(amount_due)
+"""
