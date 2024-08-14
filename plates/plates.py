@@ -24,8 +24,8 @@ def num_valid(plate):
     n = len(plate)
     middle_characters = plate[2:n]
     if middle_characters[0] == 0:
-        return False
+        return True
     else:
-        True
+        False
 
 main()
