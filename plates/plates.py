@@ -9,9 +9,10 @@ def main():
 def is_valid(plate):
     if plate[0].isalpha() and plate[1].isalpha():
         if len(plate) <= 6 and len(plate) >= 2:
-            return True
-        else:
-            False
+            if num_valid(plate):
+                return True
+            else:
+                False
 
 def num_valid(plate):
     # “Numbers cannot be used in the middle of a plate; they must come at the end.
