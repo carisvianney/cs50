@@ -7,10 +7,9 @@ def main():
 
 
 def is_valid(plate):
-    for character in plate:
-        if plate[0:2].isalpha():
-            
 
+def start_with_two_letters_valid(plate):
+    if plate[0:2] is 
     # “All vanity plates must start with at least two letters.”
     # if s[0:2]
 
