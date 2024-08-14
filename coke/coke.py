@@ -14,7 +14,6 @@ def main(amount_due):
 for coin in coins_permitted:
     if coin_inserted == coin:
         amount_due = amount_due - coin_inserted
-        #print(amount_due)
-        print("hello")
+        coin_inserted = int(input("Insert coin: "))
 
 main(amount_due)
