@@ -7,13 +7,7 @@ def main():
 
 
 def is_valid(plate):
-    # if .isalpha in s[0:2]:
-
-    for character in plate:
-        print(character[0])
-
-        # if character[0:2]
-        
+    if plate[0].isalpha() and plate[1].isalpha():
         if len(plate) <= 6 and len(plate) >= 2:
             return True
         else:
