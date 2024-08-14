@@ -10,8 +10,7 @@ while amount_due > 0:
     print(amount_due)
     coin_inserted = int(input("Insert coin: "))
     if coin_inserted in coins_permitted:
-            amount_due = amount_due - coin_inserted
-
+        amount_due = amount_due - coin_inserted
 
 else:
     print("Change Owed: ", end="")
