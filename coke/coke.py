@@ -7,4 +7,4 @@ print(amount_due)
 coin_inserted = int(input("Insert coin: "))
 
 if coin_inserted in coins_permitted:
-    amount_due = coke - coin_inserted
+    amount_due = amount_due - coin_inserted
