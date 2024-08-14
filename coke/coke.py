@@ -6,7 +6,7 @@ print("Amount due:", end="")
 print(amount_due)
 
 coin_inserted = int(input("Insert coin: "))
-
+"""
 def main(amount_due):
     while True:
         for coin_inserted in coins_permitted:
@@ -14,10 +14,11 @@ def main(amount_due):
         print("Amount due:", end="")
         print(amount_due)
         coin_inserted = int(input("Insert coin: "))
-
+"""
 for coin in coins_permitted:
     if coin_inserted == coin:
         amount_due = amount_due - coin_inserted
+        return amount_due
 
 
 """
