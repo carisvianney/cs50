@@ -7,7 +7,7 @@ def main():
 
 coin_inserted = int(input("Insert coin: "))
 
-if coin_inserted in coins_permitted:
+while coin_inserted in coins_permitted:
     amount_due = amount_due - coin_inserted
 
 main()
