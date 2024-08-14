@@ -1,19 +1,13 @@
-
 amount_due = 50
 coins_permitted = [25, 10, 5]
 
-print("Amount due: ", end="")
-print(amount_due)
+#informar monto total
+print("Amount due: " + str(amount_due))
 
+#insertar moneda
 coin_inserted = int(input("Insert coin: "))
 
-def main(amount_due):
-    print("Amount due: ", end="")
-    print(amount_due)
-
-for coin in coins_permitted:
-    if coin_inserted == coin:
-        amount_due = amount_due - coin_inserted
-        new_coin = int(input("Insert coin: "))
-
-main(amount_due)
+#restar moneda incluida en la lista al monto total
+if coin_inserted in coins_permitted:
+    amount_due = amount_due - coin_inserted
+    
