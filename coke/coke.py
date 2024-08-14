@@ -8,9 +8,12 @@ print("Amount due: " + str(amount_due))
 while amount_due > 0:
     coin_inserted = int(input("Insert coin: "))
     if coin_inserted in coins_permitted:
-        amount_due = amount_due - coin_inserted
-        print("Amount due: ", end="")
-        print(amount_due)
+        if coin_inserted < amount_due:
+            amount_due = amount_due - coin_inserted
+            print("Amount due: ", end="")
+            print(amount_due)
+        elif coin_inserted > amount_due:
+            
 
 #muestra el cambio en números positivos
 else:
