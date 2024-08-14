@@ -8,7 +8,7 @@ print("Amount due: " + str(amount_due))
 while amount_due > 0:
     coin_inserted = int(input("Insert coin: "))
     print("Amount due: ", end="")
-    print(amount_due)
+    print(amount_due - coin_inserted)
 
 #restar moneda incluida en la lista al monto total
 def main(amount_due):
