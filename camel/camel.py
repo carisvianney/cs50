@@ -1,7 +1,11 @@
-camelCase = input("camelCase: ")
+camel_case = input("camelCase: ")
 
-def camel_to_snake_case(camelCase):
-    # Inserta un "_" antes de una letra mayúscula y conviértela a minúscula
+def find_upper(cadena):
     
+
+
+#def camel_to_snake_case(camelCase):
+    # Inserta un "_" antes de una letra mayúscula y conviértela a minúscula
+
 
 #snake_case(camelCase)
