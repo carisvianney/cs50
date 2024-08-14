@@ -18,7 +18,8 @@ def num_valid(plate):
     # “Numbers cannot be used in the middle of a plate; they must come at the end.
     # For example, AAA222 would be an acceptable … vanity plate; AAA22A would not be acceptable.
     # The first number used cannot be a ‘0’.”
-    middle_characters = plate[2:5]
+    n = len(plate)
+    middle_characters = plate[2:n]
     if middle_characters[0] != 0:
         return True
     else:
