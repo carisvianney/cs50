@@ -9,7 +9,9 @@ def main():
 def is_valid(plate):
     if len(plate) <= 6 and len(plate) >= 2:
         if plate[0].isalpha() and plate[1].isalpha():
-            if num_valid(plate) == True:
+            if len(plate) > 3 and plate[2] != 0:
+
+        #    if num_valid(plate) == True:
                 return True
             else:
                 False
@@ -20,12 +22,13 @@ def is_valid(plate):
     The first number used cannot be a ‘0’.”
 """
 
-
+"""
 def num_valid(plate):
    if len(plate) > 3:
        if plate[2] != 0:
            return True
        else:
            False
+"""
 
 main()
