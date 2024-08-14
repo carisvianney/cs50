@@ -8,5 +8,6 @@ def main():
         else:
             print(letter, end="")
 
+print()
 
 main()
