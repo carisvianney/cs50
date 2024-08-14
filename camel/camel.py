@@ -1,7 +1,7 @@
 camelCase = input("camelCase: ")
 
-str.upper in camelCase
-    return
+camelCase.upper
+
 
 #def snake_case(camelCase):
     # Inserta un "_" antes de una letra mayúscula y conviértela a minúscula
