@@ -2,7 +2,7 @@ Input = input("Input: ")
 
 def main():
     vowels = ["a", "e", "i", "o", "u"]
-    for letter in list(Input):
+    for letter in Input:
         if letter in vowels:
             print("", end="")
         else:
