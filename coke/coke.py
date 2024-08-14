@@ -11,5 +11,6 @@ def insert_coin(coin_inserted):
         amount_due = 50 - coin_inserted
         print("Amount due:", end="")
         print(amount_due)
+        break
 
 insert_coin(coin_inserted)
