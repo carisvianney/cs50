@@ -15,6 +15,8 @@ def main(amount_due):
         print(amount_due)
         coin_inserted = int(input("Insert coin: "))
 
+for coin_inserted in coins_permitted:
+    
 
 """
 def insert_coin(coin_inserted):
