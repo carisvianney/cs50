@@ -1,4 +1,6 @@
 Input = input("Input: ")
-Output = Input
 
-print("Output: " + Output)
+def main():
+    vowels = ["a", "e", "i", "o", "u"]
+    for letter in list(Input):
+        print
