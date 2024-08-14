@@ -11,8 +11,8 @@ def main(amount_due):
     while True:
         for coin_inserted in coins_permitted:
             amount_due = amount_due - coin_inserted
-        print("Amount due:", end="")
-        print(amount_due)
+            print("Amount due:", end="")
+            print(amount_due)
         coin_inserted = int(input("Insert coin: "))
 
 
