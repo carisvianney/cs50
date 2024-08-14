@@ -6,7 +6,7 @@ coins_permitted = [25, 10, 5]
 
 #insertar moneda loop
 while amount_due > 0:
-    print("Amount due: ", end="")
+    print("Amount Due: ", end="")
     print(amount_due)
     coin_inserted = int(input("Insert coin: "))
     if coin_inserted in coins_permitted:
