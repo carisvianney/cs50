@@ -12,6 +12,8 @@ while amount_due > 0:
             if amount_due > 0:
                 print("Amount due: ", end="")
                 print(amount_due)
+            
+
 else:
     print("Change Owed: ", end="")
     print(abs(amount_due))
