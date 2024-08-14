@@ -20,7 +20,7 @@ def is_valid(plate):
     The first number used cannot be a ‘0’.”
 """
 
-
+"""
 def num_valid(plate):
     n = len(plate)
     middle_characters = plate[2:n]
@@ -28,5 +28,5 @@ def num_valid(plate):
         return True
     else:
         False
-
+"""
 main()
