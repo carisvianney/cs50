@@ -14,10 +14,6 @@ while amount_due > 0:
                 print(amount_due)
             else:
                  print("Change Owed: ", end="")
-                 print()
+                 print(abs(amount_due))
 
-#muestra el cambio en números positivos
-else:
-    print("Change Owed: ", end="")
-    print(amount_due)
 
