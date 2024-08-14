@@ -1,0 +1,3 @@
+camelCase = input("camelCase: ")
+
+
