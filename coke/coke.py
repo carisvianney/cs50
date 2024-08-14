@@ -20,5 +20,7 @@ insert_coin(coin_inserted)
 while True:
     for coin_inserted in coins_permitted:
         amount_due = amount_due - coin_inserted
+    print("Amount due:", end="")
     print(amount_due)
+    coin_inserted = int(input("Insert coin: "))
     break
