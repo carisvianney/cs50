@@ -12,4 +12,4 @@ def insert_coin(coin_inserted):
         print("Amount due:", end="")
         print(amount_due)
 
-insert_coin()
+insert_coin(coin_inserted)
