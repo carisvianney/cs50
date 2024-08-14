@@ -22,7 +22,7 @@ def is_valid(plate):
 
 
 def num_valid(plate):
-   if len(plate) > 2:
+   if len(plate) > 3:
        if plate[2] != 0:
            return True
        else:
