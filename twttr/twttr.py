@@ -4,7 +4,7 @@ def main():
     vowels = ["a", "e", "i", "o", "u"]
     for letter in list(Input):
         if letter in vowels:
-            print("")
+            print("", end="")
         else:
             print(letter, end="")
 
