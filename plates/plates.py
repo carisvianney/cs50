@@ -20,13 +20,9 @@ def is_valid(plate):
     The first number used cannot be a ‘0’.”
 """
 
-"""
+
 def num_valid(plate):
-    n = len(plate)
-    middle_characters = plate[2:n]
-    if middle_characters[0] == 0:
-        return True
-    else:
-        False
-"""
+   if len(plate) > 2:
+       if plate[0].isdigit() and plate[0]
+
 main()
