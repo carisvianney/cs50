@@ -7,9 +7,7 @@ def main():
 
 
 def is_valid(s):
-    for character in s:
-        if s[0:2] .isalpha():
-            print(character)
+    if len(s) >
 
 
 
