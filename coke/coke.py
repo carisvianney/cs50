@@ -2,7 +2,7 @@
 amount_due = 50
 coins_permitted = [25, 10, 5]
 
-def main():
+def main(amount_due):
     while True:
         for coin_inserted in coins_permitted:
             amount_due = amount_due - coin_inserted
@@ -28,4 +28,4 @@ insert_coin(coin_inserted)
 """
 
 
-main()
+main(amount_due)
