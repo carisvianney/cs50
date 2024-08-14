@@ -1,9 +1,8 @@
 camelCase = input("camelCase: ")
 
 
-for letter in list(camelCase):
+for letter in camelCase:
     if letter.isupper():
-        letter = letter.lower()
-        print("_" + letter)
+        letter = "_" + letter.lower()
     print(letter, end="")
 
