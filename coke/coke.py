@@ -16,11 +16,14 @@ def insert_coin(coin_inserted):
 for coin_inserted
 insert_coin(coin_inserted)
 """
+def main():
+    while True:
+        for coin_inserted in coins_permitted:
+            amount_due = amount_due - coin_inserted
+        print("Amount due:", end="")
+        print(amount_due)
+        break
 
-while True:
-    for coin_inserted in coins_permitted:
-        amount_due = amount_due - coin_inserted
-    print("Amount due:", end="")
-    print(amount_due)
-    coin_inserted = int(input("Insert coin: "))
-    break
+coin_inserted = int(input("Insert coin: "))
+
+main()
