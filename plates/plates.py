@@ -23,6 +23,9 @@ def is_valid(plate):
 
 def num_valid(plate):
    if len(plate) > 2:
-       if plate[0].isdigit() and plate[0]
+       if plate[2].isdigit() and plate[2] != 0:
+           return True
+       else:
+           False
 
 main()
