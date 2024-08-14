@@ -1,11 +1,5 @@
-camel_case = input("camelCase: ")
+camelCase = input("camelCase: ")
+camel_case = [camelCase]
 
-def find_upper(cadena):
-    for letter in cadena:
-        if letter.isupper():
-            return "_" + letter
-    return None
-
-upper_letter = find_upper(camel_case)
-
-print(upper_letter)
+for letter in camel_case():
+    print(letter)
