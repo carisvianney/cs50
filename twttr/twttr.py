@@ -6,11 +6,10 @@ def main():
         if letter.isupper():
             if letter not in vowels:
                 print(letter, end="")
-                
-        elif letter in vowels:
-                print("", end="")
-        else:
+
+        elif letter not in vowels:
             print(letter, end="")
+            
 
 main()
 print()
