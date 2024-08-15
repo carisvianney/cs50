@@ -18,17 +18,14 @@ def is_valid(plate):
         return False
 
     # a partir del primer numero, no debe haber letras
-    # index comienza en cero
-    i = 0
+    num_section = False
     for index, char in enumerate(plate):
-        # se itera cada caracter del plate
         if char.isdigit():
-            # si es digito, se sale del loop con el index del digito
-            i = index
-            break
+            num_section = True
 
-    nums = plate[i, len(plate)]
-    if 
+        if not num_section and char.isdigit()
+            return False
+
 
     # Requisitos por tamaño
 
