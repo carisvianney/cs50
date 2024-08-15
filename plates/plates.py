@@ -9,9 +9,6 @@ def main():
 def is_valid(plate):
     if len(plate) <= 6 and len(plate) >= 2:
         if plate[0].isalpha() and plate[1].isalpha():
-            #if len(plate) > 3 and plate[2] != 0:
-
-        #    if num_valid(plate) == True:
             return True
         else:
             False
