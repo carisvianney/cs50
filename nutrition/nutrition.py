@@ -23,5 +23,5 @@ fruits = {
 
 fruit = input("Item: ")
 
-if fruit in fruits:
+if fruit.capitalize() in fruits:
     print("Calories: " + fruits[fruit])
