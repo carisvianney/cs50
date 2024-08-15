@@ -21,7 +21,7 @@ def is_valid(plate):
     num_section = False
     for char in plate:
         if not num_section and char.isdigit():
-            if char == 0:
+            if char == '0':
                 return False
             num_section = True
 
