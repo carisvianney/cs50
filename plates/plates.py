@@ -7,6 +7,8 @@ def main():
 
 
 def is_valid(plate):
+    plate_list = list(plate)
+    print(plate_list)
     #validación del tamaño
     if len(plate) <= 6 and len(plate) >= 2:
 
