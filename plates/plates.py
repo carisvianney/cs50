@@ -7,7 +7,10 @@ def main():
 
 
 def is_valid(plate):
+    #validación del tamaño
     if len(plate) <= 6 and len(plate) >= 2:
+
+        #validación de dos primeros chars como letras
         if plate[0].isalpha() and plate[1].isalpha():
             return True
         else:
