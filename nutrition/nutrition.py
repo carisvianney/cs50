@@ -1,7 +1,6 @@
 fruits = [
-
-    {"Item": "Apple", "calories": "130"}
-    {"Item": "Avocado", "calories": "50"}
+    {"Item": "Apple", "calories": "130"},
+    {"Item": "Avocado", "calories": "50"},
     {"Item": "Banana", "calories": "110"}
     {"Item": "Cantaloupe", "calories": "50"}
     {"Item": "Grapefruit", "calories": "60"}
@@ -20,11 +19,10 @@ fruits = [
     {"Item": "Sweet Cherries", "calories": "100"}
     {"Item": "Tangerine", "calories": "50"}
     {"Item": "Watermelon", "calories": "80"}
-
 ]
 
 fruit = input("Item: ")
 
 if fruit in fruits:
-    print(fruit)
+    print(fruit["calories"])
     #print("Calories: " + {"calories"})
