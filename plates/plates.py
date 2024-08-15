@@ -18,14 +18,9 @@ def is_valid(plate):
         return False
 
     # a partir del primer numero, no debe haber letras
+
+    # Requisitos por tamaño
     
-
-   # if len(plate) <= 6 and len(plate) >= 2:
-
-        #validación de dos primeros chars como letras
-     #   if plate[0].isalpha() and plate[1].isalpha():
-
-            #Requisitos por tamaño
     while long <= 6 and long >= 2:
         for n in plate:
             if plate[n].isalpha():
