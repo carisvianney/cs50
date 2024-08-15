@@ -24,5 +24,5 @@ fruits = [
 fruit = input("Item: ")
 
 for fruit in fruits:
-    print(fruit["calories"])
-    #print("Calories: " + {"calories"})
+    print("Calories: " + fruit["calories"])
+
