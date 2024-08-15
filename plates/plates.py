@@ -18,9 +18,20 @@ def is_valid(plate):
         return False
 
     # a partir del primer numero, no debe haber letras
+    # index comienza en cero
+    i = 0
+    for index, char in enumerate(plate):
+        # se itera cada caracter del plate
+        if char.isdigit():
+            # si es digito, se sale del loop con el index del digito
+            i = index
+            break
+
+    nums = plate[i, len(plate)]
+    if 
 
     # Requisitos por tamaño
-    
+
     while long <= 6 and long >= 2:
         for n in plate:
             if plate[n].isalpha():
