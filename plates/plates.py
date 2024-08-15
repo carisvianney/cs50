@@ -18,6 +18,7 @@ def is_valid(plate):
         return False
 
     # a partir del primer numero, no debe haber letras
+    
 
    # if len(plate) <= 6 and len(plate) >= 2:
 
