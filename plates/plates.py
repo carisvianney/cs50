@@ -17,6 +17,8 @@ def is_valid(plate):
     if plate[0].isdigit() or plate[1].isdigit():
         return False
 
+
+
     # a partir del primer numero, no debe haber letras
     num_section = False
     for char in plate:
@@ -26,6 +28,10 @@ def is_valid(plate):
             num_section = True
 
         if num_section and char.isalpha():
+            return False
+
+        # no puede incluir signos de puntuacion
+        if not char.isalnum():
             return False
     return True
 
