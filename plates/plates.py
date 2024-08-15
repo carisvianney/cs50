@@ -19,7 +19,7 @@ def is_valid(plate):
 
             #Requisitos por tamaño
             while long <= 6 and long >= 2:
-                long = long - 1
+                
 
             return True
         else:
