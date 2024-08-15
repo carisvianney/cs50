@@ -9,11 +9,19 @@ def main():
 def is_valid(plate):
     plate_list = list(plate)
     print(plate_list)
+
     #validación del tamaño
     if len(plate) <= 6 and len(plate) >= 2:
 
         #validación de dos primeros chars como letras
         if plate[0].isalpha() and plate[1].isalpha():
+
+            #Requisitos por tamaño
+            if len(plate_list) == 6:
+                
+                if len(plate_list) == 5:
+                    if len(plate_list) == 4:
+                        if len(plate_list) == 3:
             return True
         else:
             False
