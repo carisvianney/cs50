@@ -21,5 +21,6 @@ fruits = {
     "Item": "Watermelon", "calories": "80",
 }
 
-Item = input("Item: ")
+fruit = input("Item: ")
+
 
