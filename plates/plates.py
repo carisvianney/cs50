@@ -21,14 +21,14 @@ def is_valid(plate):
 
     # a partir del primer numero, no debe haber letras
     num_section = False
-    for index, char in enumerate(plate):
+    for char in plate:
         if char.isdigit():
+            if char == 0:
             num_section = True
 
-        if not num_section and char.isdigit()
+        if num_section and char.isalpha():
             return False
-
-        if num_section and char.isalpha()
+    return True
 
 
     # Requisitos por tamaño
