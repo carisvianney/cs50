@@ -9,7 +9,16 @@ def main():
 def is_valid(plate):
     plate_list = list(plate)
     long = len(plate_list)
-    #validación del tamaño
+    # debe ser mayor a 2 y menor que 6
+    if len(plate) < 2 or len(plate) > 6:
+        return False
+
+    # los dos primeros char deben ser letras
+    if plate[0].isdigit() or plate[1].isdigit():
+        return False
+
+    # a partir del primer numero, no debe haber letras
+
    # if len(plate) <= 6 and len(plate) >= 2:
 
         #validación de dos primeros chars como letras
