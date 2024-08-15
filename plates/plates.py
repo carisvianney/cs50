@@ -17,8 +17,6 @@ def is_valid(plate):
     if plate[0].isdigit() or plate[1].isdigit():
         return False
 
-    # AAA 89332
-
     # a partir del primer numero, no debe haber letras
     num_section = False
     for char in plate:
@@ -30,17 +28,6 @@ def is_valid(plate):
         if num_section and char.isalpha():
             return False
     return True
-
-
-    # Requisitos por tamaño
-
-    while long <= 6 and long >= 2:
-        for n in plate:
-            if plate[n].isalpha():
-                print(n)
-                return True
-            else:
-                False
 
 
 """
