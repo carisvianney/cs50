@@ -20,6 +20,7 @@ def is_valid(plate):
             #Requisitos por tamaño
             for n in plate_list:
                 
+
             return True
         else:
             False
