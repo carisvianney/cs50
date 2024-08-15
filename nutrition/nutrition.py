@@ -23,6 +23,6 @@ fruits = [
 
 fruit = input("Item: ")
 
-if fruit in fruits:
+if fruit in fruits["Item"]:
     print("Calories: " + fruit["calories"])
 
