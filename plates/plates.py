@@ -18,8 +18,8 @@ def is_valid(plate):
         if plate[0].isalpha() and plate[1].isalpha():
 
             #Requisitos por tamaño
-            for n in plate_list:
-                
+            while long <= 6 and long >= 2:
+                long = long - 1
 
             return True
         else:
