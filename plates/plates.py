@@ -9,26 +9,21 @@ def main():
 def is_valid(plate):
     plate_list = list(plate)
     long = len(plate_list)
-    print(plate_list)
-
     #validación del tamaño
-    if len(plate) <= 6 and len(plate) >= 2:
+   # if len(plate) <= 6 and len(plate) >= 2:
 
         #validación de dos primeros chars como letras
-        if plate[0].isalpha() and plate[1].isalpha():
+     #   if plate[0].isalpha() and plate[1].isalpha():
 
             #Requisitos por tamaño
-            while long <= 6 and long >= 2:
-                for n in plate:
-                    if plate[n].isalpha():
-                        return True
-                    else:
-                        False
+    while long <= 6 and long >= 2:
+        for n in plate:
+            if plate[n].isalpha():
+                print(n)
+                return True
+            else:
+                False
 
-
-            return True
-        else:
-            False
 
 """
     “Numbers cannot be used in the middle of a plate; they must come at the end.
