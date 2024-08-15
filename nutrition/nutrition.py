@@ -24,4 +24,5 @@ fruits = {
 fruit = input("Item: ")
 
 if fruit in fruits:
-    print("Calories: " + {"calories"})
+    print({"Item"})
+    #print("Calories: " + {"calories"})
