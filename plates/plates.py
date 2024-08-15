@@ -8,6 +8,7 @@ def main():
 
 def is_valid(plate):
     plate_list = list(plate)
+    long = len(plate_list)
     print(plate_list)
 
     #validación del tamaño
@@ -17,11 +18,8 @@ def is_valid(plate):
         if plate[0].isalpha() and plate[1].isalpha():
 
             #Requisitos por tamaño
-            if len(plate_list) == 6:
+            for n in plate_list:
                 
-                if len(plate_list) == 5:
-                    if len(plate_list) == 4:
-                        if len(plate_list) == 3:
             return True
         else:
             False
