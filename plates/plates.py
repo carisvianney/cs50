@@ -22,8 +22,9 @@ def is_valid(plate):
     # a partir del primer numero, no debe haber letras
     num_section = False
     for char in plate:
-        if char.isdigit():
+        if not num_section and char.isdigit():
             if char == 0:
+                return False
             num_section = True
 
         if num_section and char.isalpha():
