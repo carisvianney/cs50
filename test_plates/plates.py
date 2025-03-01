@@ -42,14 +42,6 @@ def is_valid(plate):
     The first number used cannot be a ‘0’.”
 """
 
-"""
-def num_valid(plate):
-   if len(plate) > 3:
-       if plate[2] != 0:
-           return True
-       else:
-           False
-"""
 
 if __name__ == "__main__":
     main()

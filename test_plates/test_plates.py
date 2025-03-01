@@ -1,5 +1,6 @@
 from plates import is_valid
 
+
 def test_plates():
     assert is_valid("AB1") == True
     assert is_valid("CHECO") == True
