@@ -1,4 +1,5 @@
 from datetime import date, timedelta
+import sys
 import re
 import operator
 import inflect
@@ -8,10 +9,9 @@ p = inflect.engine()
 def main():
     ...
     minutes = get_minutes(input("Date of Birth: "))
-    if minutes:
-        print(transcript(minutes) + " minutes")
-        return
-    print("Invalid")
+    if not minutes:
+        sys.exit("Invalid date")
+    return print(transcript(minutes) + " minutes")
 
 
 def get_minutes(s):
@@ -28,7 +28,11 @@ def get_minutes(s):
 
 def transcript(s):
     ...
-    return p.number_to_words(s)
+    # delete " and " in transcription
+    text = p.number_to_words(s)
+    if curated := re.sub(r"\b and\b", '', text):
+        return curated
+    return text
 
 
 if __name__ == "__main__":
