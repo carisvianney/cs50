@@ -11,7 +11,7 @@ def main():
     minutes = get_minutes(input("Date of Birth: "))
     if not minutes:
         sys.exit("Invalid date")
-    return print(transcript(minutes) + " minutes")
+    return print(transcript(minutes).capitalize() + " minutes")
 
 
 def get_minutes(s):
@@ -22,8 +22,8 @@ def get_minutes(s):
         duration = operator.__sub__(today, Date)
         minutes = timedelta.total_seconds(duration)/60
 
-        return minutes
-    return False 
+        return int(minutes)
+    return False
 
 
 def transcript(s):
@@ -31,7 +31,7 @@ def transcript(s):
     # delete " and " in transcription
     text = p.number_to_words(s)
     if curated := re.sub(r"\b and\b", '', text):
-        return curated
+        text = curated
     return text
 
 
