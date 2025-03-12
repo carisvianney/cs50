@@ -1,44 +1,50 @@
 class Jar:
     def __init__(self, capacity=12):
+        """
+        - Crear una nueva instancia de Jar con self.capacity = capacity.
+        - Raise ValueError cuando capacity no sea un entero positivo
+        """
         self.capacity = capacity
-        self.size = size
+        self.size = 0
+        if capacity < 0:
+            raise ValueError()
     
     def __str__(self):
-        return "🍪" * self
+        """
+        - Debe regresar un <str> con n🍪, donde n es el size del Jar
+        """
+        return "🍪" * self.size
 
     def deposit(self, n):
-        if size + n <= self.capacity:
-            size = size + n
-            return size
-        raise ValueError("You can't add that many cookies to the jar")
+        """
+        - Debe agregar n cookies al Jar
+        - Si supera el capacity, debe lanzar un ValueError
+        """
+        if self.size + n > self.capacity:
+            raise ValueError("There's too many cookies in the jar")
+        self.size = self.size + n
+        return
 
     def withdraw(self, n):
-        if not size - n < 0:
-            size = size - n
-        raise ValueError("There aren't that many cookies in the jar")
+        """
+        - Debe quitar n cookies al Jar
+        - Si no hay tantas cookies en el Jar, debe lanzar un ValueError
+        """
+        if n > self.size:
+            raise ValueError("There's not that many cookies in the jar")
+        self.size = self.size - n
+        return
 
 
-    @property
     def capacity(self):
-        capacity = input("Capacity: ")
+        """
+        - Debe regresar el capacity del Jar
+        """
         return self.capacity
        
-    @capacity.setter
-    def capacity(self, capacity):
-        if not capacity:
-            self._capacity = 12
-        elif not capacity >= 0:
-            raise ValueError("Capacity is not a non-negative int")
-        self._capacity = capacity
-    
-    @property
     def size(self):
+        """
+        - Debe regresar el size del Jar, inicialmente 0
+        """
         return self.size
     
-    @size.setter
-    def size(self, size):
-        ...
-
-    
-jar = Jar()
-jar.capacity = 10
